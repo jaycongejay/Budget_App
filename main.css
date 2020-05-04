@@ -1,0 +1,110 @@
+
+body{
+    background: black !important;
+    color: white;
+    margin: 50px auto;
+    width: 414px;
+}
+
+.dash-title{
+    font-size: 1.5em;
+}
+.app-title{
+    font-size: 1.5em;
+    background-color: #0062ccd4;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+.budget-header{
+    background-color: #0062ccd4;
+    padding: 20px;
+    border-radius: 0 0 9px 9px;
+}
+.budget-dashcoard{
+    border-radius: 27px 27px 0 0;
+    background-color: white;
+    color: black;
+    padding: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.account{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.input{
+    display: flex;
+}
+.toggle{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input input:hover{
+    background-color: #0051aa;
+    color: white;
+}
+.income-title-input:hover{
+    background-color: #0051aa;
+    color: white;
+}
+
+.input input{
+    border-style: hidden;
+    width: 180px;
+}
+
+
+.chart{
+    padding: 10px;
+}
+
+.balance .title, .balance .value{
+    font-size: 1.8em;
+    font-family: Fredoka One;
+}
+
+.account{
+    margin-top: 23px;
+}
+
+
+.income .income-total{
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+.outcome .outcome-total{
+    font-size: 1.5em;
+    color: red;
+    font-weight: 700;
+}
+
+.income-section .income{
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+}
+
+.toggle .tab1:hover{
+    cursor: pointer;
+    background-color: #0051aa;
+    color: white;
+}
+.toggle .tab2:hover{
+    cursor: pointer;
+    background-color: #0051aa;
+    color: white;
+}
+.toggle .tab3:hover{
+    cursor: pointer;
+    background-color: #0051aa;
+    color: white;
+}
+

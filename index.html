@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka One" rel="stylesheet">
+</head>
+<body>
+    <div class="budget-container">
+        <div class="app-title">Budget</div>
+        <div class="budget-header">
+            <div class="balance">
+                <div class="title">Balance</div>
+                <div class="value">$7500</div>
+            </div>
+            <div class="account">
+                <div class="income">
+                    <div class="title">Income</div>
+                    <div class="income-total">$10000</div>
+                </div>
+                <div class="chart"><i class="fas fa-coins fa-3x"></i></div>
+                <div class="outcome">
+                    <div class="title">Outcome</div>
+                    <div class="outcome-total">$20000</div>
+                </div>
+            </div>
+        </div>
+        <div class="budget-dashcoard">
+            <div class="dash-title">Dashboard</div>
+            <div class="toggle">
+                <div class="tab1">Expenses</div>
+                <div class="tab2 active">Income</div>
+                <div class="tab3">All</div>
+            </div>
+            <div class="hide" id="expense"></div>
+            <div class="income-section">
+                <ul class="list">
+                    <li id="0" class="income">
+                        <div class="entry">Salary: $ 8000</div>
+                        <div id="edit"><i class="fas fa-edit"></i></div>
+                        <div id="delete"><i class="fas fa-trash-alt" style="color: red"></i></div>
+                    </li>
+                </ul>
+                <div class="input">
+                    <input type="text" id="income-title-input" name="title" placeholder="Title">
+                    <input type="number" id="income-amount-input" name="amount" placeholder="$0">
+                    <div class="add-income"><i class="fas fa-plus-square fa-2x" style="color: #0051aa"></i></div>
+                </div>
+            </div>
+            <div class="hide" id="all"></div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://kit.fontawesome.com/d57b225a9c.js" crossorigin="anonymous"></script>
+</body>
+</html>
