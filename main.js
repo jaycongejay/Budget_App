@@ -6,11 +6,17 @@ const dashboardBtn = document.querySelector('.dash-title');
 
 expenseBtn.addEventListener('click', function(){
     active(expenseBtn);
+    hide(incomeBtn);
+    hide(allBtn);
 })
 incomeBtn.addEventListener('click', function(){
+    hide(expenseBtn);
     active(incomeBtn);
+    hide(allBtn);
 })
 allBtn.addEventListener('click', function(){
+    hide(expenseBtn);
+    hide(incomeBtn);
     active(allBtn);
 })
 
