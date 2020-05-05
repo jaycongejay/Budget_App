@@ -108,3 +108,21 @@ body{
     color: white;
 }
 
+
+.activeToggle{
+    font-size: 1.5em;
+    font-family: Kaushan Script;
+    color: #0051aa;
+}
+
+
+.dash-title span:hover{
+    cursor: pointer;
+    background-color: #0051aa;
+    color: white;
+}
+
+.income i:hover{
+
+    cursor: pointer;
+}
