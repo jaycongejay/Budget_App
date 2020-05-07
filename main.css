@@ -51,6 +51,10 @@ body{
     background-color: #0051aa;
     color: white;
 }
+.expense-title-input:hover{
+    background-color: #0051aa;
+    color: white;
+}
 .income-title-input:hover{
     background-color: #0051aa;
     color: white;
@@ -87,6 +91,10 @@ body{
     font-weight: 700;
 }
 
+.expense-section .expense{
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+}
 .income-section .income{
     display: grid;
     grid-template-columns: 10fr 1fr 1fr;
@@ -122,7 +130,81 @@ body{
     color: white;
 }
 
+.expense i:hover{
+
+    cursor: pointer;
+}
 .income i:hover{
 
     cursor: pointer;
+}
+
+.editModeExpense{
+    background-color: yellow;
+}
+.editModeIncome{
+    background-color: yellow;
+}
+
+#expenseAddList:hover{
+    cursor: pointer;
+}
+#incomeAddList:hover{
+    cursor: pointer;
+}
+#expenseEditList:hover{
+    cursor: pointer;
+}
+
+#expenseEditList{
+    display: none;
+}
+#incomeEditList:hover{
+    cursor: pointer;
+}
+
+#incomeEditList{
+    display: none;
+}
+
+.hideAddIcon{
+    display: none !important;
+}
+.hideEditIcon{
+    display: none !important;
+}
+
+.showEditIcon{
+    display: block !important;
+}
+.showAddIcon{
+    display: block !important;
+}
+
+
+
+.expense-section{
+    display: none;
+}
+.income-section{
+    display: none;
+}
+
+
+.allList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.expenseListInAll ul{
+    list-style: none;
+    color: red;
+    padding-left: 32px;
+    text-align: left;
+}
+.incomeListInAll ul{
+    list-style: none;
+    padding-left: 32px;
+    text-align: left;
 }

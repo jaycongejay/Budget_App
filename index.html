@@ -15,17 +15,17 @@
         <div class="budget-header">
             <div class="balance">
                 <div class="title">Balance</div>
-                <div class="value">$7500</div>
+                <div class="value">$ 0</div>
             </div>
             <div class="account">
                 <div class="income">
                     <div class="title">Income</div>
-                    <div class="income-total">$10000</div>
+                    <div class="income-total">$ 0</div>
                 </div>
                 <div class="chart"><i class="fas fa-coins fa-3x"></i></div>
                 <div class="outcome">
                     <div class="title">Outcome</div>
-                    <div class="outcome-total">$20000</div>
+                    <div class="outcome-total">$ 0</div>
                 </div>
             </div>
         </div>
@@ -36,15 +36,40 @@
                 <div class="tab2 active">Income</div>
                 <div class="tab3">All</div>
             </div>
-            <div class="hide" id="expense"></div>
+            <div class="expense-section">
+                <ul class="expenseList">
+                    
+                </ul>
+                <div class="input">
+                    <input type="text" id="expense-title-input" name="title" placeholder="Title">
+                    <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
+                    <div class="add-expense">
+                        <i id="expenseAddList" class="fas fa-plus-square fa-2x" style="color: #0051aa"></i>
+                        <i id="expenseEditList" class="fas fa-exchange-alt fa-2x" style="color: #0051aa"></i>
+                    </div>
+                </div>
+            </div>
             <div class="income-section">
-                <ul class="list">
+                <ul class="incomeList">
                     
                 </ul>
                 <div class="input">
                     <input type="text" id="income-title-input" name="title" placeholder="Title">
                     <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                    <div class="add-income"><i id="addList" class="fas fa-plus-square fa-2x" style="color: #0051aa"></i></div>
+                    <div class="add-income">
+                        <i id="incomeAddList" class="fas fa-plus-square fa-2x" style="color: #0051aa"></i>
+                        <i id="incomeEditList" class="fas fa-exchange-alt fa-2x" style="color: #0051aa"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="all-section">
+                <div class="allList">
+                    <div class="expenseListInAll">
+                        <ul></ul>
+                    </div>
+                    <div class="incomeListInAll">
+                        <ul></ul>
+                    </div>
                 </div>
             </div>
             <div class="hide" id="all"></div>
@@ -53,7 +78,7 @@
     
 
 
-    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/d57b225a9c.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
