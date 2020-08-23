@@ -442,3 +442,80 @@ function switchIconsForAddOrEdit(type){
 
 
 
+const eventButton = document.querySelector('.eventButton');
+
+eventButton.addEventListener('click', () => {
+
+
+
+    if (confirm("Lotto Time!! \n Wanna play?")) {
+
+
+            let lottoNums = [];
+            lottoAuto(lottoNums)
+
+            let userNums = [];
+            lottoAuto(userNums)
+
+            let sortLottoNums = lottoNums.sort((a, b) => a - b);
+            let sortUserNums = userNums.sort((a, b) => a - b);
+
+            let lottoEntry = '';
+            let userEntry = '';
+
+            entryResult(lottoNums, lottoEntry)
+            entryResult(userNums, userEntry)
+            
+            for(num of sortLottoNums){
+                if(num == sortLottoNums[5]){
+                    lottoEntry += num;
+                }
+                else{
+                    lottoEntry += num + ' - ';
+                }
+            }
+            for(num of sortUserNums){
+                if(num == sortUserNums[5]){
+                    userEntry += num;
+                }
+                else{
+                    userEntry += num + ' - ';
+                }
+            }
+            
+            alert(`Winner : ${lottoEntry}\nYou       : ${userEntry}`);
+    }
+    else {
+        alert('Bye!')
+    }
+})
+
+
+
+function lottoAuto(nums){
+
+    let count = 0;
+    do{
+        let randomNumber = Math.round(Math.random() * 46 + 1);
+        
+        if(nums.indexOf(randomNumber) == -1){
+
+            nums.push(randomNumber);
+            count++;
+        }
+        else{
+            continue;
+        }
+
+
+    }while(count < 6);
+    
+}
+
+
+function entryResult(nums, entry){
+    for(num of nums){
+        entry += num + ' ';
+    }
+}
+
